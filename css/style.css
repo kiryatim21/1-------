@@ -1,0 +1,102 @@
+body {
+    font-family: 'Montserrat';
+    width: 85vw;
+    margin: 0 auto;
+}
+
+/* header */
+
+.logo {
+    font-size: 31px;
+}
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+}
+nav ul li {
+    list-style-type: none;
+    margin-right: 42px;
+}
+li > a {
+    color: #333333;
+    text-decoration: none;
+}
+.nav-number {
+    margin: 0;
+    padding: 14px 32px;
+    background-color: #2C3878;
+}
+.nav-number a {
+    color: white;
+}
+
+/* preview-cart*/
+
+.preview-cart h1 {
+    font-size: 72px;
+}
+.info {
+    background-color: #2C3878;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 255px;
+    right: 285px;
+
+
+}
+.container-info {
+    padding: 45px 31px;
+}
+.string-info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 63px;
+}
+.info-none {
+    margin: 0;
+}
+.main-info {
+    font-size: 48px;
+    color: white;
+}
+.second-info {
+    color: white;
+}
+.preview-cart img {
+    width: 100%;
+}
+
+/* about-projects */
+
+.project-text {
+    width: 36.5%;
+    margin-top: 100px;
+}
+.project-text > div {
+    display: flex;
+    flex-direction: column;
+
+}
+.heading {
+    font-size: 32px;
+}
+.project-text p {
+    font-size: 18px;
+    color: #9C9C9C;
+    hyphens: auto;
+}
+.advantages {
+    width: 100%;
+    background-color: #2C3878;
+}
+.advantages-cart {
+    display: flex;
+    align-items: center;
+    color: white;
+}
