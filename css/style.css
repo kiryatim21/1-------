@@ -42,6 +42,12 @@ li > a {
 .nav-number:hover {
     cursor: pointer;
 }
+.mobail {
+    background-color: #2C3878;
+    padding: 12px 20px;
+    display: none;
+    cursor: pointer;
+}
 
 /* preview-cart*/
 
@@ -86,6 +92,9 @@ li > a {
 .preview-cart img {
     width: 100%;
 }
+.mobail-button {
+    display: none;
+}
 
 /* about-projects */
 
@@ -112,6 +121,7 @@ li > a {
 }
 .heading {
     font-size: 32px;
+    font-weight: 600;
 }
 .about-projects p {
     font-size: 18px;
@@ -139,6 +149,7 @@ li > a {
     width: 320px;
     margin-left: 30px;
     font-size: 20px;
+    font-weight: 600;
 }
 .two-project-text {
     width: 45%;
@@ -151,6 +162,7 @@ button {
     padding: 14px 32px;
     background-color: #2C3878;
     color: #fff;
+    border: 0px;
 }
 button:hover {
     cursor: pointer;
@@ -196,7 +208,7 @@ button:hover {
     width: 100%;
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(4, 290px);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 300px);
     gap: 10px;
 }
@@ -236,6 +248,7 @@ button:hover {
     background-image: url(/img/image\ 5.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     grid-column: 1 / 3;
     color: #fff;
     
@@ -244,6 +257,7 @@ button:hover {
     background-image: url(/img/image\ 5\ \(1\).png);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     grid-column: 3 / 4;
     grid-row: 1 / 3;
     color: #fff;
@@ -253,6 +267,7 @@ button:hover {
     color: #fff;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 
 }
 .cart-four {
@@ -260,6 +275,7 @@ button:hover {
     color: #fff;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 
 }
 .cart-five {
@@ -267,6 +283,7 @@ button:hover {
     color: #fff;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 
 }
 .cart-six {
@@ -274,6 +291,7 @@ button:hover {
     color: #fff;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 
 }
 
@@ -305,6 +323,10 @@ button:hover {
     width: 550px;
     font-size: 18px;
     color: #9C9C9C;
+    padding-left: 25px;
+}
+.details-container ul li {
+    margin-bottom: 5px;
 }
 .download {
     margin-top: 46px;
@@ -348,7 +370,7 @@ footer {
     font-family: 'Montserrat';
     position: relative;
     left: 15px;
-    color: #fff;
+    color:rgba(255, 255, 255, 0.7);
 }
 .footer-button {
     width: 244px;
@@ -364,6 +386,9 @@ footer {
 }
 
 @media (max-width: 1100px) {
+    .logo {
+        font-size: 20px;
+    }
     nav ul li:first-child {
         display: none;
     }
@@ -371,7 +396,7 @@ footer {
     /* preview-cart*/
 
     .preview-cart h1 {
-    font-size: 40px;
+        font-size: 40px;
     }
     .preview-cart h1::after {
         width: 52%;
@@ -386,13 +411,13 @@ footer {
     .container-info {
         padding: 35px 60px;
         display: flex;
+        justify-content: space-between;
         text-align: center;
     }
     .string-info {
         display: flex;
         flex-direction: column;
         margin-bottom: 0px;
-        margin-right: 130px;
     }
     .info-none {
         margin-right: 0px;
@@ -437,12 +462,11 @@ footer {
         width: 68%;
     }
     .infrastructure-cart {
-        grid-template-columns: repeat(2, 290px);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 300px);
     }
     .cart {
         grid-column: 1 / 3;
-        
     }
     .cart-two {
         grid-column: 1 / 2;
@@ -479,6 +503,7 @@ footer {
         grid-area: "footer-text";
     }
     .left-footer .footer-logo {
+        margin-bottom: 20px;
         grid-area: "footer-logo";
     }
     .right-footer .footer-form {
@@ -487,4 +512,174 @@ footer {
     .right-footer .footer-number {
         grid-area: "footer-number";
     }
+    .footer-button {
+        margin-bottom: 65px;
+    }
+}
+
+@media (max-width: 450px) {
+    main, header {
+        width: 90vw;
+    }
+    header {
+        margin-bottom: 30px;
+    }
+    .header-nav {
+        margin-top: 20px;
+    }
+    nav ul li {
+        display: none;
+    }
+    nav {
+        display: flex;
+    }
+    .mobail {
+        display: block;
+    }
+
+    /* preview-cart*/
+
+    .preview-cart h1 {
+        font-size: 24px;
+    }
+    .preview-cart h1::after {
+        width: 0px;
+    }
+    .container-info {
+        padding: 20px 15px;
+    }
+    .main-info {
+        font-size: 20px;
+    }
+    .second-info {
+        font-size: 8px;
+    }
+    .mobail-button {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+
+    /* about-projects */
+
+    .project-text {
+        width: 100%;
+        margin-top: 50px;
+    }
+    .project-text div > span::after {
+        width: 76%;
+        margin-top: -8px;
+        margin-left: 80px;
+    }
+    .heading {
+        font-size: 20px;
+    }
+    .project-text div > span {
+        font-size: 12px;
+    }
+    .about-projects p {
+        font-size: 16px;
+    }
+    .advantages {
+        padding: 61px 26px;
+    }
+    .advantages-cart img {
+        width: 70px;
+    }
+    .advantages-cart span {
+        width: 193px;
+        font-size: 16px;
+    }
+    .two-project-text {
+        margin-top: 60px;
+        width: 85%;
+        margin-bottom: 78px;
+    }
+    .fullscrin-img {
+        left: -19px;
+    }
+
+    /* infrastructure */
+
+    .infrastructure {
+        margin-top: 50px;
+    }
+    .heading-container {
+        width: 100%;
+    }
+    .heading-container span {
+        font-size: 12px;
+    }
+    .heading-container span::after {
+        margin-top: -8px;
+        width: 63%;
+        margin-left: 125px;
+    }
+    .infrastructure-cart {
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(7, 300px);
+    }
+    .cart {
+        grid-column: 1 / 2;
+    }
+    .cart-two {
+        grid-row: 4 / 6;
+    }
+
+    /* details */
+
+    .details {
+        margin-top: 50px;
+    }
+    .heading-container-details {
+        width: 100%;
+    }
+    .heading-container-details span {
+        font-size: 12px;
+    }
+    .heading-container-details span::after {
+        margin-top: -8.5px;
+        width: 76%;
+        margin-left: 82px;
+    }
+    .heading:last-child {
+        width: 305px;
+    }
+    .details-container {
+        flex-direction: column;
+        align-items: start;
+    }
+    .details-container ul {
+        width: 350px;
+        font-size: 16px;
+        margin-bottom: 26px;
+        box-sizing: border-box;
+    }
+    .download {
+        margin-top: 36px;
+    }
+    /* footer */
+
+    footer {
+        margin-top: 115px;
+    }
+    .footer-contant {
+        padding: 108px 0px 27px 0px;
+    }
+    .left-footer span {
+        font-size: 20px;   
+    }
+    .left-footer span:first-child {
+        margin-bottom: 50px;
+    }
+    .left-footer, .right-footer {
+        width: 100%;
+    }
+    .footer-logo {
+        font-size: 24px;
+    }
+    .footer-number {
+        font-size: 24px;
+    }
+    
 }
