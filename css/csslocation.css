@@ -60,18 +60,18 @@ li > a {
 /* preview-cart*/
 
 .preview-cart h1 {
-    font-size: 72px;
+    font-size: 52px;
     color: #333333;
 }
 .preview-cart h1::after {
     content: "";
     display: block;
-    width: 55%;
+    width: 53%;
     height: 2px;
     background-color: black;
     position: relative;
-    top: -220px;
-    left: 740px;
+    top: -155px;
+    left: 770px;
 }
 .preview-cart p {
     margin-top: 80px;
@@ -85,7 +85,7 @@ li > a {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 330px;
+    top: 240px;
     right: 285px;
 }
 .container-info {
