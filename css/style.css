@@ -167,13 +167,13 @@ button {
 button:hover {
     cursor: pointer;
 }
-.fullscrin-img {
+.fullscrin {
     width: 99.8vw;
     position: relative;
     left: -148px;
     overflow: hidden;
 }
-.fullscrin-img img {
+.fullscrin img {
     width: 100%;
     display: block;
 }
