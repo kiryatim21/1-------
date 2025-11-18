@@ -444,7 +444,7 @@ footer {
         margin-bottom: 165px;
         left: 0px;
     }
-    .fullscrin-img {
+    .fullscrin {
         width: 99.8vw;
         position: relative;
         left: -75px;
@@ -595,7 +595,7 @@ footer {
         width: 85%;
         margin-bottom: 78px;
     }
-    .fullscrin-img {
+    .fullscrin {
         left: -19px;
     }
 
